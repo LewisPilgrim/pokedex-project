@@ -1,8 +1,7 @@
 import './App.css';
 
 import PokemonDisplay from './features/pokemon/pokemonDisplay';
-import NextIdButton from './features/ids/nextIdButton';
-import PreviousIdButton from './features/ids/previousIdButton';
+import SearchTerm from './features/search/SearchTerm';
 
 function App() {
   return (
@@ -11,10 +10,12 @@ function App() {
         <h1>POKEDEX</h1>
       </header>
       <main>
-        {/* <PreviousIdButton />
-        <NextIdButton /> */}
+        <SearchTerm />
         <PokemonDisplay />
       </main>
+      <footer>
+        <a href="https://lewispilgrim.github.io">2023 @ Lewis Pilgrim</a>
+      </footer>
     </div>
   );
 }

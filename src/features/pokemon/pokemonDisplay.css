@@ -1,0 +1,28 @@
+.pokeName {
+    font-size: 30px;
+}
+
+.pokeId {
+    font-size: 25px;
+}
+
+.nameIdBlock {
+    display: inline-block;
+    width: 50%;
+}
+
+.displayPort {
+    padding: 50px;
+}
+
+.displayPort img {
+    align-content: right;
+}
+
+#pokeAbilities ul {
+    list-style-type: none;
+}
+
+.pokeTypes {
+    margin: 20px;
+}

@@ -1,9 +1,8 @@
-import { useSelector, useDispatch } from "react-redux";
-import { decrement, pokeId } from "./idsSlice";
+import { useDispatch } from "react-redux";
+import { decrement } from "./idsSlice";
 
 const PreviousIdButton = () => {
     const dispatch = useDispatch();
-    const currentId = useSelector(pokeId);
 
     return (
         <button onClick={dispatch(decrement())}>Previous</button>
