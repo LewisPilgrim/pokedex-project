@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import pokeIdReducer from '../features/pokemon/pokemonSlice';
-import idsReducer from '../features/ids/idsSlice';
 import searchReducer from '../features/search/searchSlice';
 
 export const store = configureStore({
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+        immutableCheck: { warnAfter: 128 },
+        serializableCheck: { warnAfter: 128 },
+      }),
     reducer: {
         pokemon: pokeIdReducer,
-        id: idsReducer,
         search: searchReducer
     }
 })

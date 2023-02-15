@@ -2,13 +2,12 @@ import { useSelector, useDispatch } from "react-redux";
 import {
     selectAllPokemon,
     setPokemon,
-    // increment,
-    // decrement,
     setIdTo
 } from "./pokemonSlice";
 import { useEffect } from "react";
 import { selectQuery } from "../search/searchSlice";
 import "./pokemonDisplay.css";
+import PokemonExerpt from "./pokeExeprt";
 
 const PokemonDisplay = () => {
     const dispatch = useDispatch();
@@ -30,25 +29,11 @@ const PokemonDisplay = () => {
 
     let content;
     if (renderedPokemon.name) {
-        content =
-            <article className="displayPort">
-                <div className="nameIdBlock">
-                    <h2 className="pokeName">Name: {renderedPokemon.name.toUpperCase()}</h2>
-                    <p className="pokeId">Id: {renderedPokemon.id}</p>
-                </div>
-                <img src={renderedPokemon.sprites.other['official-artwork'].front_default} alt={renderedPokemon.name} />
-                <p className="pokeTypes">Types: {renderedPokemon.types ? renderedPokemon.types.map(type => <span className="pokeType">{type.type.name.toUpperCase()} </span>) : ''}</p>
-                <p className="pokeAbilities"><strong>Abilities: </strong>
-                    <ul>
-                        {renderedPokemon.abilities ? renderedPokemon.abilities.map(ability => <li>{ability.ability.name.toUpperCase()}</li>) : ''}
-                    </ul> </p>
-            </article>
+        content = <PokemonExerpt />
     }
 
     return (
         <section>
-            {/* <button onClick={() => dispatch(decrement())}>Previous</button>
-            <button onClick={() => dispatch(increment())}>Next</button> */}
             {content}
         </section>
     )

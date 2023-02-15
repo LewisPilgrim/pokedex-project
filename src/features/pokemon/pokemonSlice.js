@@ -3,9 +3,6 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios';
 
 const baseURL = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
-
-
-
 const initialState = {
     pokemon: [],
     status: 'idle', // 'idle', 'loading', 'succeeded', 'failed'

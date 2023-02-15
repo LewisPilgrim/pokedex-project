@@ -9,6 +9,9 @@
 .nameIdBlock {
     display: inline-block;
     width: 50%;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 
 .displayPort {
@@ -16,13 +19,131 @@
 }
 
 .displayPort img {
-    align-content: right;
+    margin: 60px;
+    width: 500px;
+    height: 500px;
 }
 
-#pokeAbilities ul {
+.pokeAbilities {
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 4px;
+    max-width: 250px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.pokeAbilities ul {
     list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .pokeTypes {
     margin: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 14px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pokeType {
+    padding: 5px;
+    margin: 2px auto;
+    border: 3px solid;
+    max-width: 50%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#fire {
+    background-color: #EE8130;
+    border-color: #a1551a;
+}
+
+#water {
+    background-color: #6390F0;
+    border-color: #3758a0;
+}
+
+#grass {
+    background-color: #7AC74C;
+    border-color: #579135;
+}
+
+#electric {
+    background-color: #F7D02C;
+    border-color: #99801b;
+}
+
+#normal {
+    background-color: #A8A77A;
+    border-color: #6e6e4f;
+}
+
+#flying {
+    background-color: #A98FF3;
+    border-color: #735cb3;
+}
+
+#fighting {
+    background-color: #C22E28;
+    border-color: #811e1a;
+}
+
+#dark {
+    background-color: #705746;
+    border-color: #4b392d;
+}
+
+#psychic {
+    background-color: #F95587;
+    border-color: #a02f51;
+}
+
+#fairy {
+    background-color: #D685AD;
+    border-color: #8a4f6c;
+}
+
+#dragon {
+    background-color: #6F35FC;
+    border-color: #371a80;
+}
+
+#poison {
+    background-color: #A44EA1;
+    border-color: #582657;
+}
+
+#ghost {
+    background-color: #735797;
+    border-color: #493661;
+}
+
+#ice {
+    background-color: #96d9d6;
+    border-color: #5a8b89;
+}
+
+#ground {
+    background-color: #e2bf65;
+    border-color: #8d773f;
+}
+
+#rock {
+    background-color: #b6a136;
+    border-color: #6d6123;
+}
+
+#bug {
+    background-color: #a6b91a;
+    border-color: #5e6811;
+}
+
+#steel {
+    background-color: #b7b7ce;
+    border-color: #84848d;
 }

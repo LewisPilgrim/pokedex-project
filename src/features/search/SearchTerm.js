@@ -12,25 +12,21 @@ export default function SearchTerm() {
 
 
     const dispatch = useDispatch();
-
     const handleSubmit = (e) => {
         if (e.key === 'Enter') {
             dispatch(newSearchTerm(e.target.value));
         }
     }
-
     const handleMouseOver = () => {
         return setVisible(true);
     }
-
     const handleOnMouseOut = () => {
         return setVisible(false);
     }
 
-
     return (
         <div className="searchBar">
-            <input name='searchBar' type='text' placeholder='Search by Pokemon name or id' id='queryBox' onKeyUp={handleSubmit}></input>
+            <input name='searchBar' type='text' placeholder='Search by Pokemon name or id' id='queryBox' spellCheck="false" onKeyUp={handleSubmit}></input>
             <div className="searchInfoBox">
                 <img onMouseOver={handleMouseOver} onMouseLeave={handleOnMouseOut} src={infoIcon} alt="Help"></img>
                 {visible === true ? <Tooltip /> : ''}
