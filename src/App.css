@@ -30,6 +30,10 @@ html, body {
   letter-spacing: 25px;
 }
 
+.App-header h1 {
+  margin-left: 25px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -50,7 +54,7 @@ html, body {
 
   .App-header h1 {
     font-size: 25px;
-    margin: 0 auto;
+    margin-left: 25px;
   }
   .displayPort {
     width: 100vw;
