@@ -25,10 +25,8 @@ const PokemonDisplay = () => {
         fetchPokemon();
     })
 
-    const renderedPokemon = pokes;
-
     let content;
-    if (renderedPokemon.name) {
+    if (pokes.name) {
         content = <PokemonExerpt />
     }
 

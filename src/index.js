@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <head>
+      <meta charSet='UTF-8'></meta>
       <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet"></link>
-      <meta charSet='UTF-8'></meta>
       <title>Pokedex</title>
     </head>
     <Provider store={store}>

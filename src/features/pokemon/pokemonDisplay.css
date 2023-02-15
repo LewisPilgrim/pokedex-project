@@ -7,7 +7,7 @@
 }
 
 .nameIdBlock {
-    display: inline-block;
+    display: block;
     width: 50%;
     position: absolute;
     top: 0;
@@ -19,9 +19,17 @@
 }
 
 .displayPort img {
-    margin: 60px;
+    display: block;
+    margin: 90px auto;
     width: 500px;
     height: 500px;
+}
+
+@media only screen and (max-width: 380px) {
+    .displayPort img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .pokeAbilities {
@@ -53,7 +61,6 @@
     padding: 5px;
     margin: 2px auto;
     border: 3px solid;
-    max-width: 50%;
     border-radius: 20px;
     text-align: center;
 }
